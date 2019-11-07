@@ -57,12 +57,18 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+	margin-bottom: 15px;
+	
 }
-
+h1 {
+	font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+	margin-bottom: 15px;
+	font-size: 70px;
+}
 /* Your code starts here! */
 
 .container {
@@ -75,30 +81,37 @@ header nav a {
 	display: inline-block;
 	margin-right: 50px;
 	margin-top: 5px;
-	width: 5%;
+	width: 10%;
 	color: grey;
   }
   .logo {
-	display: inline-block;
-	width:5%;
+	width:10%;
 	position: absolute;
-	margin-left: 0px;
+	vertical-align: top;
+	display: inline-block;
+	 
 }
 
 .content_2 {
     /* comment out border when done testing */
-    border: 2px solid red;
+    border: 2px 
     margin: 1%;
     width: 100%;
 }
 
 .content_2_box {
-    border: 2px solid blue;
+    border: 2px;
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     margin: 1%;
-    width: 20%;
-    min-width: 100px;
+    width: 15%;
+	min-width: 550px;
+	text-align:center;
+	
+
+
+}
+	
 }
 
   p {
@@ -106,26 +119,57 @@ header nav a {
 	display: inline-block;
   }
 .header {
-	
 	display: inline-block;
 	text-align:center;
 	height: 20px;
 	width: 10px;
-	font-size:90px;
+	font-size: 80px;
 	padding: 50px;
 }
-
-
-header .code-snippet {
-	margin-top: 35px;
-	margin-left: 600px;
-	vertical-align: top;
-	display: inline-block;
 	
 }
 button {
 	white-space: wrap;
-	width: 100;
+	width: 100px;
 	margin: 50px;
+
 	
 }
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding: 20px 0px;
+  }
+
+
+  .top-content{
+    /* comment out border when done testing */
+   
+	display: inline-block;
+	vertical-align: middle;
+    /* if you want a margin of a certain % for equal-sized
+        boxes then follow this forumla:
+        Box Width = (100 - ((margin% * # of boxes) * 2)) / (# of boxes)
+        Example: Box Width = (100 - (1 * 2)) / 4 = 23%
+        So if you have 4 equal sized boxes with a margin
+        of 1% your box width will be 23% for dynamic sizing
+    */
+    margin: 3%;
+    width: 40%;
+    min-width: 150px;
+}
+.bottom-content {
+	vertical-align: middle;
+	display: inline-block;
+	margin: 3%;
+    width: 25%;
+    min-width: 150px;
+
+}
+.copyright {
+	text-align: center;
+}
+
+
